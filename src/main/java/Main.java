@@ -60,7 +60,7 @@ class Main {
 
     public static String UNIXtoHuman(long UNIXTime) {
         SimpleDateFormat sdf =  new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");
-        return sdf.format(UNIXTime / 1000L);
+        return sdf.format(UNIXTime * 1000L);
     }
 
     public static long HumantoUNIX(String HumanTime) throws ParseException {
